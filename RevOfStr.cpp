@@ -5,7 +5,7 @@ void rev(string &str, int s){
 	int e = str.length() - 1 - s;
 	if(s > e) return ;
 	
-	swap(str[s++], str[e--]);
+	swap(str[s++], str[e]);
 	
 	rev(str,s);
 }
