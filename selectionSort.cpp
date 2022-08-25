@@ -1,3 +1,5 @@
+// use case : when we have to sort a small array or vector and low on space complexity
+
 #include<iostream>
 using namespace std;
 
@@ -10,6 +12,7 @@ void print(int* arr, int n){
 
 void sortFromR(int* arr, int n){
     if (n == 1) return ;
+    
     int i = 1;
     while(i<n){
         if(arr[0]>arr[i]) swap(arr[0], arr[i]);
